@@ -23,7 +23,7 @@ class WC_FyfyPay_Webhook_Handler {
 		if ( ! isset( $_SERVER['REQUEST_METHOD'] )
 			|| ( 'POST' !== $_SERVER['REQUEST_METHOD'] )
 			|| ! isset( $_GET['wc-api'] )
-			|| ( 'wc_8pay' !== $_GET['wc-api'] )
+			|| ( 'wc_fyfypay' !== $_GET['wc-api'] )
 		) {
 			return;
 		}
@@ -112,7 +112,7 @@ class WC_FyfyPay_Webhook_Handler {
 
 			return false;
 		} catch ( Exception $e ) {
-			WC_8Pay_Logger::log( 'Error retrieving webhook notifications: ' . $e->getMessage() );
+			WC_FyfyPay_Logger::log( 'Error retrieving webhook notifications: ' . $e->getMessage() );
 			return false;
 		}
 	}

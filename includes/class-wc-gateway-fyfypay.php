@@ -46,7 +46,7 @@ class WC_Gateway_FyfyPay extends WC_Payment_Gateway {
 			'BTCB'   => $this->get_option( 'BTCB' ),
 			'CAKE'   => $this->get_option( 'CAKE' ),
 			'BSCPAD' => $this->get_option( 'BSCPAD' ),
-			'SOLANA' => $this->get_option( 'SOLANA' ),
+			'SOL' => $this->get_option( 'SOL' ),
 			'NAFTY'   => $this->get_option( 'NAFTY' ),
 		];
 

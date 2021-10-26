@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * WC_FyfyPay_Helper class.
  *
  */
-class WC_8Pay_Helper {
+class WC_FyfyPay_Helper {
 
 	/**
 	 * Get webhook url.
