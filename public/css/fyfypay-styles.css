@@ -1,0 +1,38 @@
+.select-token-message {
+  font-weight: bold
+}
+
+.tokens-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.token-button {
+  min-width: 64px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.token-button img {
+  opacity: 0.3;
+}
+
+.token-symbol {
+  color: #bcbcbc;
+  font-weight: bold;
+}
+
+.token-button:hover img,
+.token-button.selected img {
+  opacity: 1;
+}
+
+.token-button:hover .token-symbol,
+.token-button.selected .token-symbol {
+  color: #00b1ff;
+}
