@@ -93,14 +93,14 @@ function woocommerce_gateway_fyfypay() {
 			 * Init the plugin after plugins_loaded so environment variables are set.
 			 */
 			public function init() {
-				require_once dirname( __FILE__ ) . '/includes/fyfypay-api/class-wc-fyfyPay-api.php';
+				require_once dirname( __FILE__ ) . '/includes/fyfypay-api/class-wc-fyfypay-api.php';
 				require_once dirname( __FILE__ ) . '/includes/constants/class-wc-fyfypay-billing-models.php';
-				require_once dirname( __FILE__ ) . '/includes/constants/class-wc-FyfyPay-tokens.php';
-				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfyPay-helper.php';
-				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfyPay-logger.php';
+				require_once dirname( __FILE__ ) . '/includes/constants/class-wc-fyfypay-tokens.php';
+				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfypay-helper.php';
+				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfypay-logger.php';
 				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfyPay-rates.php';
-				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfyPay-short-urls.php';
-				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfyPay-webhook-handler.php';
+				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfypay-short-urls.php';
+				require_once dirname( __FILE__ ) . '/includes/class-wc-fyfypay-webhook-handler.php';
 				require_once dirname( __FILE__ ) . '/includes/class-wc-gateway-fyfyPay.php';
 
 				if ( is_admin() ) {
